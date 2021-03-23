@@ -14,7 +14,7 @@ app.get('/admin/add-product', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'add-product.html'));
 });
 
-app.post('/admin/product', (req, res) => {
+app.post('/admin/add-product', (req, res) => {
     console.log(req.body);
     res.redirect('/');
 });
