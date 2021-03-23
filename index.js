@@ -1,9 +1,26 @@
+const path = require('path');
+
 const express = require('express');
 
 const app = express();
 
+app.use(express.urlencoded({ extended: false }));
+
 app.get('/', (req, res) => {
-    res.send('<h1>Hello, World ✨</h1>');
+    res.sendFile(path.join(__dirname, 'views', 'shop.html'));
+});
+
+app.get('/admin/add-product', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'add-product.html'));
+});
+
+app.post('/admin/product', (req, res) => {
+    console.log(req.body);
+    res.redirect('/');
+});
+
+app.use((req, res) => {
+    res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
 const PORT = process.env.PORT || 5000;
