@@ -1,0 +1,26 @@
+{
+  "name": "shopper-mart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravburjwal/shopper-mart.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "e-commerce",
+    "mongodb"
+  ],
+  "author": "Gaurav Burjwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravburjwal/shopper-mart/issues"
+  },
+  "homepage": "https://github.com/gauravburjwal/shopper-mart#readme"
+}
