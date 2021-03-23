@@ -2,23 +2,16 @@ const path = require('path');
 
 const express = require('express');
 
+const adminRoutes = require('./routes/admin.js');
+const shopRoutes = require('./routes/shop.js');
+
 const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'shop.html'));
-});
-
-app.get('/admin/add-product', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'add-product.html'));
-});
-
-app.post('/admin/add-product', (req, res) => {
-    console.log(req.body);
-    res.redirect('/');
-});
+app.use(shopRoutes);
+app.use('/admin', adminRoutes);
 
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
