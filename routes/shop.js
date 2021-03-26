@@ -2,7 +2,6 @@ const path = require('path');
 
 const express = require('express');
 
-const rootDir = require('../utils/rootDir.js');
 const { products } = require('./admin.js');
 
 const router = express.Router();
