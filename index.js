@@ -2,8 +2,9 @@ const path = require('path');
 
 const express = require('express');
 
-const adminData = require('./routes/admin.js');
+const adminRoute = require('./routes/admin.js');
 const shopRoutes = require('./routes/shop.js');
+const errorController = require('./controllers/error.js');
 
 const app = express();
 
@@ -14,14 +15,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(shopRoutes);
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRoute);
 
-app.use((req, res) => {
-    res.status(404).render('404', {
-        pageTitle: '❌ 404 Error Page Not Found ❌',
-        path: '',
-    });
-});
+app.use(errorController.get404);
 
 const PORT = process.env.PORT || 5000;
 
