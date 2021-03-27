@@ -1,1 +1,50 @@
-[{"title":"Harry Potter"},{"title":"Iron Man"},{"title":"Black Panther"},{"title":"Captain America"},{"title":"Captain America"}]
+[
+    {
+        "title": "Harry Potter",
+        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+        "price": "100",
+        "description": "Awesome Book Series\r\n"
+    },
+    {
+        "title": "Iron Man",
+        "imageUrl": "https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTR8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60",
+        "price": "20",
+        "description": "Another Marvelous Book"
+    },
+    {
+        "title": "Rich Dad Poor Dad",
+        "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91VokXkn8hL.jpg",
+        "price": "50",
+        "description": "Best book on financial topic"
+    },
+    {
+        "title": "Captain America",
+        "imageUrl": "https://images.unsplash.com/photo-1546521343-4eb2c01aa44b",
+        "price": "64",
+        "description": "Nice Book!"
+    },
+    {
+        "title": "Black Panther",
+        "imageUrl": "https://images.unsplash.com/photo-1543002588-bfa74002ed7e",
+        "price": "42",
+        "description": "Nice Book!"
+    },
+    {
+        "title": "New Book",
+        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+        "price": "7",
+        "description": "Nice Book!"
+    },
+    {
+        "title": "Another Book",
+        "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c",
+        "price": "1000",
+        "description": "Costly Book"
+    },
+    {
+        "title": "Good or God",
+        "imageUrl": "https://images.unsplash.com/photo-1598618443855-232ee0f819f6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NTR8fHxlbnwwfHx8&auto=format&fit=crop&w=500&q=60",
+        "price": "300",
+        "description": "Insightful Book"
+    }
+]
