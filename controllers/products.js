@@ -4,9 +4,6 @@ exports.getAddProduct = (req, res) => {
     res.render('add-product', {
         pageTitle: 'Add Product',
         path: '/admin/add-product',
-        formsCSS: true,
-        productCSS: true,
-        activeAddProduct: true,
     });
 };
 
@@ -22,9 +19,6 @@ exports.getProducts = (req, res) => {
             prods: products,
             pageTitle: 'Shop',
             path: '/',
-            formsCSS: true,
-            productCSS: true,
-            activeAddProduct: true,
         });
     });
 };
